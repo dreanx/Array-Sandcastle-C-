@@ -29,7 +29,8 @@ namespace Sandpit
                 Console.Write(i + " ");
             }
             Console.WriteLine();
-            Console.WriteLine("Printing Arrays with for (prints the indexes):");
+
+            Console.WriteLine("Printing Arrays with for (prints the indexes)(i):");
             for (int i = 0; i < array1.Length; i++)
             {
                 Console.Write(i+" ");
@@ -38,6 +39,18 @@ namespace Sandpit
             for (int i = 0; i < array2.Length; i++)
             {
                 Console.Write(i+" ");
+            }
+            Console.WriteLine();
+
+            Console.WriteLine("Printing Arrays with for (prints the values)(array[i]):");
+            for (int i = 0; i < array1.Length; i++)
+            {
+                Console.Write(array1[i]+" ");
+            }
+            Console.WriteLine();
+            for (int i = 0; i < array2.Length; i++)
+            {
+                Console.Write(array2[i]+" ");
             }
 
             Console.ReadKey();
