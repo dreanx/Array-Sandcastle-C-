@@ -13,12 +13,12 @@ namespace Sandpit
             int[] array1 = new int[5];
             int[] array2 = {15,82,43};
 
-            Console.WriteLine("Printing a value of the empty Array:");
+            Console.WriteLine("\n---Printing a value of the empty Array:---");
             Console.WriteLine(array1[2]);
-            Console.WriteLine("Printing a value of the filled Array:");
+            Console.WriteLine("\n---Printing a value of the filled Array:---");
             Console.WriteLine(array2[1]);
 
-            Console.WriteLine("Printing Arrays with foreach (print the values):");
+            Console.WriteLine("\n---Printing Arrays with foreach (print the values):---");
             foreach (int i in array1)
             {
                 Console.Write(i+" ");
@@ -30,7 +30,7 @@ namespace Sandpit
             }
             Console.WriteLine();
 
-            Console.WriteLine("Printing Arrays with for (prints the indexes)(i):");
+            Console.WriteLine("\n---Printing Arrays with for (prints the indexes)(i):---");
             for (int i = 0; i < array1.Length; i++)
             {
                 Console.Write(i+" ");
@@ -42,7 +42,7 @@ namespace Sandpit
             }
             Console.WriteLine();
 
-            Console.WriteLine("Printing Arrays with for (prints the values)(array[i]):");
+            Console.WriteLine("\n---Printing Arrays with for (prints the values)(array[i]):---");
             for (int i = 0; i < array1.Length; i++)
             {
                 Console.Write(array1[i]+" ");
@@ -52,6 +52,10 @@ namespace Sandpit
             {
                 Console.Write(array2[i]+" ");
             }
+
+            Console.WriteLine("\n\n--- ArrayList Sum Example ---");
+            int Total = array2.Sum();
+            Console.WriteLine($"Total: {Total}");
 
             Console.ReadKey();
         }
